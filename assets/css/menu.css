@@ -2,17 +2,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; /* esse conjunto deixa ocupando totalmente a parte de cima*/
   width: 100%;
+  z-index: 1; /*para tudo ficar em baixo do menu*/
   border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
 .menu-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /*deixa um do lado do outro, ao invés de embaixo*/
+  justify-content: space-between; /*faz com que vá para o outro lado*/
+  align-items: center; /* vai alinhar o conteudo no meio do conteiner*/
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0; /*pois eu quero que os link empurre o padding para baixo, não deixar isso pre-definido*/
+  border-bottom: 0.1rem solid var(--light-gray);
 }
 
 .menu h1 {
@@ -21,7 +23,7 @@
 }
 
 .menu h1 a {
-  color: inherit;
+  color: inherit; /*vai herdar do registro pai*/
 }
 
 .menu ul {
@@ -30,17 +32,18 @@
 }
 
 .menu ul li a {
-  display: block;
+  display: block; /*para poder ajustar as posicoes*/
   padding: 2rem;
   font-size: 1.8rem;
   color: var(--primary-color);
   position: relative;
+  text-transform: uppercase;
 }
 
 .menu ul li a::after {
   content: '';
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 50%;
   width: 0;
   height: 0.2rem;
@@ -49,6 +52,61 @@
 }
 
 .menu ul li a:hover::after {
-  width: 50%;
+  width: 60%;
   left: 25%;
 }
+/*começo da animaçao do silva*/
+
+.menu h1 a span {
+  position: relative;
+}
+.menu h1 a span::before {
+  content: '';
+  color: var(--animation-color);
+  animation: silva 20s infinite;
+
+}
+.menu h1 a span::after {
+  content: "";
+  position: absolute;
+  padding-top: 2rem;
+  height: 40%;
+  border-left: 0.2rem solid var(--animation-color);  
+  right: -1rem;
+  animation: cursor .8s infinite, aparece 20s steps(80) infinite;
+  width: calc(100% + 1rem);
+  background-color: var(--white-color);
+  
+}
+@keyframes aparece {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 1rem);
+  }
+}
+@keyframes cursor {
+  0%{
+    border-left: 0.2rem solid var(--white-color);
+  }
+}
+@keyframes silva {
+  0%, 20%{ 
+    content: "Marcos >";
+  }
+  21%, 40%{ 
+    content: "Silva >";
+  }
+  41%, 60%{ 
+    content: "Marcos >";
+  }
+  61%, 80%{ 
+    content: "Silva >";
+  }
+  81%, 100%{ 
+    content: "Developer >";
+  }
+
+}
+/*fim da animaçao*/

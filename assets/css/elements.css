@@ -1,16 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth; /*faz com que a rolagem seja mais sutil*/
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +31,10 @@ h1 {
 }
 
 h2 {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
+  margin-bottom: 6rem;
+  text-transform: uppercase; /*deixa todas em letra maiuscula*/
+  line-height: 1.2;
 }
 
 h3 {
@@ -49,4 +55,7 @@ h6 {
 
 a {
   text-decoration: none;
+}
+p {
+  margin-bottom: 2.6rem;
 }

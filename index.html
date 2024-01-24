@@ -16,25 +16,153 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="main-bg">
-  <aside class="menu white-bg">
-    <section class="main-content menu-content">
-      <h1>
-        <a href="#">LOGO</a>
-      </h1>
+<body>
 
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1>
+        <a href="#home"> &lt; Kevin <span></span></a>
+      </h1>
       <nav>
         <ul>
-          <li><a href="#">intro</a></li>
-          <li><a href="#">top 3</a></li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">work</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#article">article</a></li>
+          <li><a href="#grid-one">grid</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
-    </section>
+    </div>
   </aside>
 
-</body>
+  <div class="menu-spacing"></div> <!-- Para eu colocar um espaço e o texto nao ficar por baixo do menu-->
 
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Testando novas aplicações</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sequi vitae eveniet ea provident totam sunt molestias corrupti, nam asperiores dignissimos. Error recusandae quo deserunt rerum molestias placeat deleniti laudantium.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript_not_optimaze.svg" alt="homem segurando logo do css, mulher empurrando logo do javascript,homem segurando logo do html">
+      </div>
+    </div>
+  </section>
+
+  <section id="article" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Poderia ser artigo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consectetur repellendus eos facere inventore a dolore similique delectus impedit? Exercitationem voluptatem molestias aliquam hic blanditiis aperiam iste earum ipsum eligendi!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ad tempora, dolore dolorum, aliquam, deleniti perferendis nobis quas asperiores suscipit nemo repudiandae debitis minus nisi harum dignissimos optio qui! Perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam illum, at, sunt debitis recusandae aliquid excepturi ut asperiores esse dolore nihil tempore? Dignissimos dolore ullam eius quia, tempora ea delectus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolore error eveniet voluptates, hic suscipit modi reprehenderit in recusandae ratione deserunt temporibus nihil, nobis repudiandae deleniti voluptatibus consectetur tempora distinctio?
+      </p>
+    </div>
+  </section>
+    
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-content">
+      <h2 class="aply-grid">Aplicando grid</h2>
+      <p class="desc-grid">Uma breve descrição</p>
+      <div class="grid-teste">
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse natus labore eveniet. Magni doloribus dolor omnis, aperiam aliquam libero optio facere quidem voluptates eaque quae minus autem voluptatibus qui?</p>
+        </article>
+
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse natus labore eveniet. Magni doloribus dolor omnis, aperiam aliquam libero optio facere quidem voluptates eaque quae minus autem voluptatibus qui?</p>
+        </article>
+
+        <article>
+          <h3>Teste</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse natus labore eveniet. Magni doloribus dolor omnis, aperiam aliquam libero optio facere quidem voluptates eaque quae minus autem voluptatibus qui?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-content">
+      <h2 class="aply-grid">gallery</h2>
+      <p class="desc-grid">Aqui usei umas imagens do unsplash</p>
+      
+      <!-- https://source.unsplash.com/random/360x360 -->
+      <div class="grid-teste">
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Fale comigo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sequi vitae eveniet ea provident totam sunt molestias corrupti, nam asperiores dignissimos. Error recusandae quo deserunt rerum molestias placeat deleniti laudantium.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/developer.svg" alt="">
+      </div>
+
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Form Contato</legend>
+  
+            <div class="form-group">
+              <label for="first-name">Primeiro Nome</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Seu Nome">
+            </div>
+  
+            <div class="form-group">
+              <label for="last-name">Sobrenome</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Último Nome">
+            </div>
+            
+            <div class="form-group ">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Exemplo: seunome@hotmail.com">
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="text">Mensagem</label>
+              <textarea name="message" id="`message" cols="30" rows="10" placeholder="Sua Mensagem..."></textarea>
+            </div>
+  
+            <div class="form-group">
+              <button type="submit">Send message</button>
+            </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="white-bg">
+    <p>
+      <a href="https://github.com/kevinsilva2023" target="_blank">DESENVOLVIDO E CRIADO POR | KEVIN SILVA</a>
+        </footer>
+    </p>
+</body>
 </html>

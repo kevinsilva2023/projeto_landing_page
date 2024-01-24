@@ -1,0 +1,146 @@
+.intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /*um fragmento para cada lado, faz coom que um fique em baixo do outro*/
+    gap: var(--gap);
+    min-height: 100vh; /*vai fazer com que a grip ocupe todo espaço,e assim com a linha de baixo consigo deixar tuddo no meio*/
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    min-height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /*dando esses 3 comandos acima faz com que o conteudo fique no centro do containeir*/
+    min-height: 100vh;
+}
+
+.grid-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.aply-grid{
+    margin-bottom: 1rem;
+}
+.desc-grid{
+    padding-bottom: 8rem;
+}
+.grid-teste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter; /*primeiro preciso criar um contador*/
+}
+
+.grid-teste h3 {
+    font-size: 3rem;
+    position: relative; /*declarando para que o counter nao vá para o começo da página*/
+    padding-left: 8rem; /*posicionando o titulo "h3"*/
+    padding-bottom: 2rem;/*posicionando o titulo "h3"*/
+}
+.grid-teste h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter); /*Agora aparece o contador de grid*/
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -0.5rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out; /*isso suavisa o movimento*/
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg)
+}
+
+.contact-form {
+    grid-column: span 2;
+
+}
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+
+}
+.form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    min-width: 32rem;
+    flex: 1 1 auto;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+.form-group ::placeholder {
+    color: gray;
+    font-size: 1.6rem;
+} 
+
+#footer {
+    text-align: center;
+}
+
+#footer a {
+    padding-top: 1rem;
+    color: #666
+}
