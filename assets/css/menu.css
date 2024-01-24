@@ -93,19 +93,19 @@
 }
 @keyframes silva {
   0%, 20%{ 
-    content: "Marcos >";
+    content: "Marcos />";
   }
   21%, 40%{ 
-    content: "Silva >";
+    content: "Silva />";
   }
   41%, 60%{ 
-    content: "Marcos >";
+    content: "Marcos />";
   }
   61%, 80%{ 
-    content: "Silva >";
+    content: "Silva />";
   }
   81%, 100%{ 
-    content: "Developer >";
+    content: "Developer />";
   }
 
 }
