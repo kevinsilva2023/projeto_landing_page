@@ -18,13 +18,15 @@
 
 <body>
 
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
+      <h1 onclick="getElementById('close-menu').checked = false;">
         <a href="#home"> &lt; Kevin <span></span></a>
       </h1>
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li><a href="#home">home</a></li>
           <li><a href="#article">article</a></li>
           <li><a href="#grid-one">grid</a></li>
@@ -130,7 +132,7 @@
 
       <div class="contact-form">
         <fieldset class="form-grid">
-          <legend>Form Contato</legend>
+          <legend></legend>
   
             <div class="form-group">
               <label for="first-name">Primeiro Nome</label>
@@ -164,5 +166,6 @@
       <a href="https://github.com/kevinsilva2023" target="_blank">DESENVOLVIDO E CRIADO POR | KEVIN SILVA</a>
         </footer>
     </p>
+    <a class="back-to-top" href="#">➤</a>
 </body>
 </html>
