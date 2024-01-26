@@ -166,7 +166,7 @@
 /*Aplicando as medias query*/
 @media (max-width: 800px) {
     h2 {
-        font-size: 6rem;
+        font-size:4.5rem;
     }
     .intro-content, .grid-teste {
         grid-template-columns: 1fr;
